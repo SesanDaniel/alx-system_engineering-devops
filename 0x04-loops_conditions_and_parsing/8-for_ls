@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Write a Bash script that displays:
+# The content of the current directory
+# In a list format
+# Where only the part of the name after the first dash is displayed
+# Do not display hidden files
+# You must use the for loop alone
+
+mylist=$(ls)
+
+for i in $mylist; do
+  echo "$i" | cut -d '-' -f2
+done
