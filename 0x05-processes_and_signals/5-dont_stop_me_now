@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# a Bash script that stops 4-to_infinity_and_beyond process.
+# You must use kill
+
+while true
+do
+	echo "To infinity and beyond"
+	sleep 2
+
+	kill 4-toinfinity_and_beyond
+done
